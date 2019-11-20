@@ -153,7 +153,7 @@ export const addExperience = (formData, history) => async dispatch => {
   }
 };
 
-// Add Educatio
+// Add Education
 export const addEducation = (formData, history) => async dispatch => {
   try {
     const config = {
@@ -200,7 +200,7 @@ export const deleteExperience = id => async dispatch => {
   } catch (err) {
     dispatch({
       type: PROFILE_ERROR,
-      payload: { msg: err.ressponse.statusText, status: err.response.status }
+      payload: { msg: err.response.statusText, status: err.response.status }
     });
   }
 };
@@ -219,13 +219,13 @@ export const deleteEducation = id => async dispatch => {
   } catch (err) {
     dispatch({
       type: PROFILE_ERROR,
-      payload: { msg: err.ressponse.statusText, status: err.response.status }
+      payload: { msg: err.response.statusText, status: err.response.status }
     });
   }
 };
 
 // Delete account and profile
-export const deleteAccount = id => async dispatch => {
+export const deleteAccount = () => async dispatch => {
   if (window.confirm('Are you sure? This can NOT be undone!')) {
     try {
       await axios.delete('/api/profile/');
@@ -237,7 +237,7 @@ export const deleteAccount = id => async dispatch => {
     } catch (err) {
       dispatch({
         type: PROFILE_ERROR,
-        payload: { msg: err.ressponse.statusText, status: err.response.status }
+        payload: { msg: err.response.statusText, status: err.response.status }
       });
     }
   }
