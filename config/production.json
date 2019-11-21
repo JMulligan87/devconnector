@@ -1,5 +1,5 @@
 {
-  "mongoURI": "mongodb://localhost/devconnector",
+  "mongoURI": "mongodb://user:password1@ds037185.mlab.com:37185/heroku_jfw7r0n1",
   "jwtSecret": "mysecrettoken",
   "githubClientId": "02e17b22ab43b4e30f82",
   "githubSecret": "3f73b402605a944b6cf06cb480f31f7774d1aa72"
