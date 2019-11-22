@@ -2,23 +2,26 @@
 
 Social network for developers
 
+[Check it out!](https://mern-devconnect0r.herokuapp.com/)
+
 This is a MERN stack application from the "MERN Stack Front To Back" course on Udemy. It is a small social network app that includes authentication, profiles and forum posts.
 
-Quick Start
+## Quick Start
+```
+ # change default.json file in config folder
 
-# change default.json file in config folder
+ # this file is located in config/default.json
 
-# this file is located in config/default.json
-
-# add uri of your mongodb connection for example
+ # add uri of your mongodb connection for example
 
 "mongoURI": "mongodb://localhost/dev-social",
-
+```
+```
 # Install server dependencies
 
 npm install
 
-# Install client dependencies
+#  Install client dependencies
 
 cd client
 npm install
@@ -31,3 +34,4 @@ npm run dev
 
 cd client
 npm run build
+```
